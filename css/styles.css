@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Poppins';
+    background-color: #13111A;
+    max-width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+  }
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #13111A;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #AA9DFF;
+    border-radius: 8px;
+}
+
+
+.image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 530px;
+    height: 530px;
+
+    background: linear-gradient(90deg, #CE4DA4 0%, #8A79FF 100%);
+    border-radius: 20px;
+    margin-right: 175px;
+}
+
+.brilho {
+    position: absolute;
+    width: 530px;
+    height: 530px;
+    filter: blur(60px);
+    background: linear-gradient(90deg, #CE4DA4 0%, #8A79FF 100%);
+    border-radius: 20px;
+}
+
+.textos_inicio {
+    margin-left: 120px;
+    margin-right: 225px;
+    display: flex;
+    flex-direction: column;
+}
+
+.objetivos {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.color_objetivos {
+    animation: flash 3s ease alternate infinite;
+    position: absolute;
+    width: 1500px;
+    height: 352px;
+
+    background: linear-gradient(90deg, rgba(138, 121, 255, 0.8) 0%, rgba(206, 77, 164, 0.8) 100%);
+    border-radius: 20px;
+}
+
+@keyframes flash {
+    0% {
+        filter: blur(20px)
+    }
+
+    100% {
+        filter: blur(35px)
+    }
+
+}
+
+.box_objetivos3 {
+    margin-left: 10px;
+    width: 370px;
+    height: 340px;
+    background: #1D1A27;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    z-index:1;
+}
+
+.boxx {
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+background: #5E5B71;
+border-radius: 10px;
+}
+
+.boxx2 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 170px;
+    top: 1860px;
+
+background: #5E5B71;
+border-radius: 10px;
+}
+
+.margem { 
+    margin-left: 18px;
+}
+
+.retangulos {
+    margin-left: 230px;
+    display: flex;
+    flex-direction: column;
+    z-index:1;
+    background: transparent;
+}
+
+.comecar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.comecar_textos {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_comecar {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 40px;
+    max-width: 500px;
+}
+
+.retangulo_comecar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 625px;
+    height: 300px;
+    margin-top: 20px;
+    background: #1D1A27;
+    box-shadow: 0px 17.1429px 42.8571px rgba(0, 0, 0, 0.5);
+    border-radius: 17.1429px;
+}
+
+.txt_comecar {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+    max-width: 650px;
+    text-align: justify;
+}
+
+.inicio {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 306px;
+    height: 82px;
+    top: 750px;
+    color: white;
+    font-size: 20px;
+
+    border-radius: 50px;
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(160, 160, 160, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #7353E5, #CE4DA4, #CE4DA4);
+    background-origin: border-box;
+    box-shadow: 2px 1000px 1px #13111A inset;
+    z-index: 1;
+}
+
+.iniciobtn {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    padding: 27px;
+    padding-left: 126px;
+    padding-right: 128px;
+    border-radius: 50px;
+}
+
+button.inicio:hover {
+    animation: gradient 5s ease-in infinite;
+    background-size: 300% 300%;
+    box-shadow: none;
+    color: black;
+    z-index: 1;
+  }
+
+  .box_comecar {
+    width: 68.57px;
+    height: 68.57px;
+    margin-left: 50px;
+    margin-top: 50px;
+    
+    background: #5E5B71;
+    border-radius: 17.1429px;
+  }
+
+  .c1 {
+      margin-top: 8px;
+      margin-left: 6px;
+    width: 55px;
+    height: 55px;
+    color: white;
+    background-color: transparent;
+  }
+
+  .appimage {
+    display: flex;
+    width: 186px;
+    height: 296px;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  .title_cadastro {
+      margin-top: 15px;
+      margin-left: 50px;
+      background: transparent;
+      color: white;
+      font-size: 25px;
+  }
+
+  .txt_cadastro {
+    margin-left: 50px;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    max-width: 300px;
+  }
+
+  .retangulo_image {
+    width: 288.86px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(138.58deg, #CE4DA4 1.52%, #8A79FF 100%);
+    border-radius: 0px 17.1429px 17.1429px 0px;
+  }
+
+  .lado2 {
+    width: 288.86px;
+    height: 300px;
+    
+    background: linear-gradient(138.58deg, #CE4DA4 1.52%, #8A79FF 100%);
+    border-radius: 0px 17.1429px 17.1429px 0px;
+  }
+
+  .lado1 {
+      background: transparent;
+  }
+
+  .retangulo_image2 {
+    width: 288.86px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(319.18deg, #CE4DA4 5.05%, #8A79FF 50.21%, #8A79FF 100%);
+    border-radius: 0px 17.1429px 17.1429px 0px;
+  }
+
+  .retangulo_image3 {
+    width: 288.86px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(272.34deg, #CE4DA4 5.04%, #FF5F56 98.04%);
+    border-radius: 0px 17.1429px 17.1429px 0px;
+  }
+
+  .linha {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 2px;
+    background: rgba(196, 196, 196, 0.1);
+    z-index: 1;
+  }
+  
+.avaliacoes {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.avaliacoes_title {
+    font-size: 40px;
+    color: white;
+    background: transparent;
+    z-index: 1;
+}
+
+.avaliacao {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: transparent;
+    z-index: 1;
+}
+
+.retangulo_avaliacao {
+    display: flex;
+    justify-content: center;
+    width: 986px;
+    height: 489px;
+    
+    background: #1D1A27;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.ir {
+    transition: transform 250ms;
+    margin-right: 75px;
+    width: 100px;
+    height: 100px;
+
+    background: #1D1A27;
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.7);
+    border-radius: 100%;
+}
+
+.ir:hover {
+    transform: translateY(-10px);
+  }
+
+.voltar {
+    transition: transform 250ms;
+    margin-left: 75px;
+    width: 100px;
+    height: 100px;
+
+    background: #1D1A27;
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.7);
+    border-radius: 100%;
+}
+
+  
+  .voltar:hover {
+    transform: translateY(-10px);
+  }
+
+.esquerda {
+    margin-top: 18px;
+    margin-left: 15px;
+    background: transparent;
+}
+
+.direita {
+    margin-top: 18px;
+    margin-left: 22px;
+    background: transparent;
+}
+
+.textos_avaliacao {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+}
+
+.title_avaliacao {
+    margin-top: 75px;
+    color: white;
+    background: transparent;
+}
+
+.txt_avaliacao {
+    font-size: 25px;
+    max-width: 500px;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    background: transparent;
+}
+
+.usuario_avaliacao {
+    margin-top: 60px;
+    color: white;
+    background: transparent;
+}
+
+.tag_avaliacao {
+    color: rgba(255, 255, 255, 0.5);
+    background: transparent;
+}
+
+.foto {
+    align-items: center;
+    background: transparent;
+    display: flex;
+}
+
+.imagem_user {
+    display: flex;
+
+    width: 360px;
+    height: 360px;
+    border-radius: 100%;
+    background: linear-gradient(180deg, #443A89 0%, #CE4DA4 132%);
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.ladoesquerdo {
+    font-size: 30px;
+    color: white;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cop {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.ladodireito {
+    margin-left: 1200px;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+}
+
+@media (max-width: 376px) {
+        .txt_vantagem {
+            font-size: 10px
+        }
+
+}

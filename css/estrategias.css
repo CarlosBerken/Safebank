@@ -1,0 +1,153 @@
+.estrategias {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.textos_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.topico {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.textos_topico {
+    display: flex;
+    flex-direction: column;
+}
+
+.title_estrategias {
+    font-size: 35px;
+    color: white;
+    margin-top: 50px;
+    max-width: 650px;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.txt_estrategias {
+    max-width: 650px;
+    font-size: 20px;
+    color: rgba(229, 229, 229, 0.5);
+    margin-top: 15px;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.titlestopico {
+    color: white;
+    font-size: 25px;
+
+    z-index: 1;
+    background-color: transparent;
+}
+
+.txt_desenvolvimento {
+    font-size: 15px;
+    color: rgba(229, 229, 229, 0.5);
+    max-width: 650px;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.title_armazenamento {
+    color: white;
+    font-size: 25px;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.txt_armazenamento {
+    font-size: 15px;
+    color: rgba(229, 229, 229, 0.5);
+    max-width: 650px;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.safebank_image {
+    position: absolute;
+    width: 532px;
+    height: 553px;
+    z-index: 99;
+    background: transparent;
+}
+
+.mongodbimage {
+    position: absolute;
+    width: 523px;
+    height: 518px;
+    z-index: 99;
+    background: transparent;
+}
+
+.criptografia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.quadradobrilho {
+    animation: flash 5s ease alternate infinite;
+    background-size: 300% 300%;
+    width: 526px;
+    height: 526px;
+    background: linear-gradient(90deg, rgba(138, 121, 255, 0.8) 0%, rgba(206, 77, 164, 0.8) 100%);
+    border-radius: 20px;
+}
+
+.quadrado {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 530px;
+    height: 530px;
+    background: linear-gradient(90deg, #8A79FF 0%, #CE4DA4 100%);
+    border-radius: 20px;
+    z-index:1;
+}
+
+@keyframes flash {
+    0% {
+        filter: blur(25px)
+    }
+
+    100% {
+        filter: blur(40px)
+    }
+
+}
+
+.criptografia_textos {
+    margin-right: 120px;
+    margin-left: 225px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    max-width: 750px;
+}
+
+.critografia_title {
+    color: white;
+    font-size: 35px;
+    margin-top: 50px;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.criptografia_txt {
+    color: rgba(229, 229, 229, 0.5);
+    max-width: 650px;
+    margin-top: 15px;
+    z-index: 1;
+    background-color: transparent;
+}

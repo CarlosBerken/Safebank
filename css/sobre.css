@@ -1,0 +1,75 @@
+.sobre {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 35px;
+}
+
+.title_sobre {
+    color: white;
+}
+
+.title_sobre_degrade {
+    animation: gradient 5s ease-in-out infinite;
+    background:  linear-gradient(90deg, #CE4DA4 0.01%, #7353E5 100%);
+    background-size: 300% 300%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.txt_sobre {
+    margin-top: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1500px;
+    height: 418px;
+    color: rgba(229, 229, 229, 0.5);
+    font-size: 25px;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.site_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 306px;
+    height: 82px;
+    top: 750px;
+    color: white;
+    font-size: 20px;
+
+    border-radius: 50px;
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(160, 160, 160, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #7353E5, #CE4DA4, #CE4DA4);
+    background-origin: border-box;
+    box-shadow: 2px 1000px 1px #13111A inset;
+    z-index: 1;
+}
+
+button.site_button:hover {
+    animation: gradient 5s ease-in infinite;
+    background-size: 300% 300%;
+    box-shadow: none;
+    color: black;
+    z-index: 1;
+  }

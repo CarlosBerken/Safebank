@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+    </style>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/sobre.css">
+    <link rel="stylesheet" href="./css/vantagens.css">
+    <link rel="stylesheet" href="./css/estrategias.css">
+    <link rel="shortcut icon" href="./images/cop.png" type="SafeBank">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <title>SafeBank | Banco de Senhas</title>
+
+    <!-- Navegacao do site -->
+    <header class="navegacao">
+        <nav class="container">
+            <ul>
+                <li class="menu">
+                    <img class="safebanknav" src="images/teste.png" alt="Copyright©">
+                </li>
+                <li class="menu"><a href="#section1">Sobre</a></li>
+                <li class="menu"><a href="#section2">Vantagens</a></li>
+                <li class="menu"><a href="#section3">Estratégias</a></li>
+                <li class="menu"><a href="#section4">Objetivos</a></li>
+                <li class="menu"><a href="#section5">Interface</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="sobre" id="section1">
+        <h1 class="title_sobre">SafeBank gerenciamento de senhas</h1>
+        <h1 class="title_sobre_degrade">para pessoas desprotegidas</h1>
+        <a class="txt_sobre">A ideia de segurança tem mudado rapidamente nas décadas as quais passamos, quando falamos
+            em segurança de nossas senhas, geralmente temos em mente algo relacionado com a nossa data de aniversário ou
+            relacionada aos nossos pais, por isso, estamos desenvolvendo um aplicativo em que podemos confiar na criação
+            e na segurança de senhas e de nossas contas, tudo em um só lugar.
+            O desenvolvimento de nossa backend tem o foco no MongoDB, um banco de dados não relacional
+            estável, além disso temos em mente que nem nossos Developers devem ter acesso aos dados dos nossos clientes.
+            Nossa proposta funciona de maneira que o usuário gere uma senha aleatória e
+            coloque em uma parte um código pessoal, sendo no início, meio ou fim, para dificultar com que sejam
+            “Hackeados”
+            De maneira que Bots tenham dificuldades de acessar quaisquer dados.
+        </a>
+        <button class="site_button">SafeBank</button>
+    </div>
+
+    <div class="vantagens" id="section2">
+        <div class="box_vantagens">
+            <div class="boxicon_vantagens">
+                <img class="criptografia_image" src="images/criptografia.png" alt="criptografia">
+            </div>
+            <a class="title_vantagem">Criptografia</a>
+            <a class="txt_vantagem">Criptografia de ponta,
+                da api até o client.</a>
+        </div>
+
+        <div class="box_vantagens2">
+            <div class="boxicon_vantagens">
+                <img class="agilidade_image" src="images/agilidade.png" alt="agilidade">
+            </div>
+            <a class="title_vantagem">Agilidade</a>
+            <a class="txt_vantagem">Aplicativo e site optimizados,
+                sem bugs e dor de cabeça.</a>
+        </div>
+
+        <div class="box_vantagens3">
+            <div class="boxicon_vantagens">
+                <img class="agilidade_image" src="images/gratuito.png" alt="criptografia">
+            </div>
+            <a class="title_vantagem">Serviços Gratuitos</a>
+            <a class="txt_vantagem">Plano gratis sem nenhuma restrição,
+                com bonus para clientes vips.</a>
+        </div>
+    </div>
+
+    <div class="estrategias" id="section3">
+        <div class="textos_inicio">
+            <div class="textos_title">
+                <h1 class="title_estrategias">Estratégias utilizadas no SafeBank</h1>
+                <h1 class="txt_estrategias"> Pretendemos usar a melhor tecnica para armazenamento dos dados dos nossos
+                    usuarios.</h1>
+            </div>
+
+            <div class="topico">
+                <div class="boxx">
+                    <img class="agilidade_image" src="images/desenvolvimento.png" alt="desenvolvimento">
+                </div>
+                <div class="textos_topico">
+                    <h1 class="titlestopico">Sobre o Desenvolvimento</h1>
+                    <a class="txt_desenvolvimento">Usaremos da liguagem mais segura e concreta do
+                        mercado, garantindo a segurança do nosso aplicativo e banco de dados.</a>
+                </div>
+            </div>
+
+            <div class="topico">
+                <div class="boxx">
+                    <img class="agilidade_image" src="images/cloud.png" alt="armazenamento">
+                </div>
+                <div class="textos_topico">
+                    <h1 class="title_armazenamento">Sobre o Armazenamento</h1>
+                    <a class="txt_armazenamento">Estamos usando um banco de dados chamado mongoDB, nao relacional,
+                        utilizando
+                        uma criptografia sem uma chave para descriptografar os dados, dessa
+                        maneira deixaremos o aplicativo mais seguro possivel.</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="image">
+                <div class="brilho"></div>
+                <img class="safebank_image" src="images/estrategias.png" alt="Estrategias">
+            </div>
+        </div>
+    </div>
+
+    <div class="criptografia">
+
+        <div class="quadrado">
+            <img class="mongodbimage" src="images/mongodb_image.png" alt="MongoDB">
+            <div class="quadradobrilho">
+            </div>
+        </div>
+
+        <div class="criptografia_textos">
+            <div class="textos_title">
+                <h1 class="critografia_title">Criptografia, seguranca de
+                    dados e etica</h1>
+                <a class="criptografia_txt">O banco de dados desenvolvido tem como objetivo
+                    ser exemplo para os concorrentes no mercado, conta-
+                    mos com o banco de dados nao relacional, mongoDB.</a>
+            </div>
+
+            <div class="topico">
+                <div class="boxx">
+                    <img class="agilidade_image" src="images/mongodb.png" alt="mongoDB">
+                </div>
+                <div class="textos_topico">
+                    <h1 class="titlestopico">Criptografia MongoDB</h1>
+                    <a class="txt_desenvolvimento">Servidor cloud-hosted, ou seja, um banco de dados totalmente online,
+                        alem
+                        disso
+                        temos garantia de que ele estara na maioria das vezes online, alem disso contamos segurança de
+                        ponta.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="objetivos" id="section4">
+        <div class="color_objetivos"></div>
+
+        <div class="box_objetivos3">
+            <div class="boxicon_vantagens">
+                <img class="agilidade_image" src="images/multiplataforma.png" alt="multiplataforma">
+            </div>
+            <a class="title_vantagem">Multi-Plataforma</a>
+            <a class="txt_vantagem">Aplicativo disponivel para Web, Windows, IOS e Android.</a>
+        </div>
+
+        <div class="box_objetivos3">
+            <div class="boxicon_vantagens">
+                <img class="agilidade_image" src="images/utilidade.png" alt="utilidade">
+            </div>
+            <a class="title_vantagem">Utilidade</a>
+            <a class="txt_vantagem">Aplicativo e site optimizados,
+                sem bugs e dor de cabeça.</a>
+        </div>
+
+        <div class="box_objetivos3">
+            <div class="boxicon_vantagens">
+                <img class="agilidade_image" src="images/atualizacao.png" alt="atualizações">
+            </div>
+            <a class="title_vantagem">Atualizações</a>
+            <a class="txt_vantagem">Atualizações frequentes do software, trazendo novas funcionalidades..</a>
+
+        </div>
+
+        <div class="box_objetivos3">
+            <div class="boxicon_vantagens">
+                <img class="agilidade_image" src="images/privacidade.png" alt="privacidade">
+            </div>
+            <a class="title_vantagem">Privacidade</a>
+            <a class="txt_vantagem">Dados totalmente em sigilo, com opcão de deletar a qualquer momento.</a>
+        </div>
+    </div>
+
+    <div class="comecar" id="section5">
+        <div class="comecar_textos">
+            <h1 class="title_comecar">Sobre a interface</h1>
+            <h1 class="txt_comecar">Sobre a interface e aplicativo, estamos entregando um gostinho de como pretendemos
+                deixá-lo. Com uma parte de cadastro, interface e a segurança do código de verificação quando o usuário
+                realizar a entrada no aplicativo para gerar novas senhas.
+                Apenas uma breve explicação de como queremos deixar nosso aplicativo para os usuários poderem utilizar o
+                Safe Bank!</h1>
+            <button class="inicio"><a class="iniciobtn" href="#section1">Inicio</a></button>
+        </div>
+
+        <div class="retangulos">
+
+            <div class="retangulo_comecar">
+                <div class="lado1">
+                    <div class="box_comecar">
+                        <img class="c1" src="images/login.png" alt="registro">
+                    </div>
+                    <h1 class="title_cadastro">Cadastros</h1>
+                    <h1 class="txt_cadastro">Cadastro simples sem muita enrolação e focado em facilidade e compreensão
+                        sobre onde você está se logando.</h1>
+                </div>
+
+                <div class="lado3">
+                    <div class="retangulo_image">
+                        <img class="appimage" src="images/registro_app.png" alt="Registro">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="retangulo_comecar">
+                <div class="lado1">
+                    <div class="box_comecar">
+                        <img class="c1" src="images/interface.png" alt="interface">
+                    </div>
+                    <h1 class="title_cadastro">Interface</h1>
+                    <h1 class="txt_cadastro">UI de facil entendimento, para todos os possiveis consumidores, e de maxima
+                        responsividade.</h1>
+                </div>
+
+                <div class="lado3">
+                    <div class="retangulo_image2">
+                        <img class="appimage" src="images/app_menu.png" alt="Interface">
+                    </div>
+                </div>
+            </div>
+
+            <div class="retangulo_comecar">
+                <div class="lado1">
+                    <div class="box_comecar">
+                        <img class="c1" src="images/security.png" alt="segurança">
+                    </div>
+                    <h1 class="title_cadastro">Segurança</h1>
+                    <h1 class="txt_cadastro">Aplicativo com código de verificação e envio de email caso logado em um
+                        aparelho desconhecido!</h1>
+                </div>
+
+                <div class="lado3">
+                    <div class="retangulo_image3">
+                        <img class="appimage" src="images/app_verification.png" alt="Verificação">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="linha"></div>
+
+
+    <div class="avaliacoes">
+        <h1 class="avaliacoes_title">Avaliações sobre o SafeBank</h1>
+
+        <div class="avaliacao">
+            <div class="ir">
+                <img class="esquerda" src="images/esquerda.png" alt="esquerda">
+            </div>
+            <div class="retangulo_avaliacao">
+
+                <div class="textos_avaliacao">
+                    <h1 class="title_avaliacao">“A salvação para os esquecidos”</h1>
+                    <a class="txt_avaliacao">Acesso milhares de sites todos os dias, não consigo lembrar todos as
+                        senhas, safebank facilita minha vida, armazenando em um local seguro!
+                    </a>
+                    <h1 class="usuario_avaliacao">Miguel Livramento</h1>
+                    <a class="tag_avaliacao">Usuário BETA</a>
+                </div>
+
+                <div class="foto">
+                    <div class="imagem_user">
+                        <img class="imagem_user" src="images/miguel.png" alt="miguel">
+                    </div>
+                </div>
+            </div>
+            <div class="voltar">
+                <img class="direita" src="images/direita.png" alt="esquerda">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="linha"></div>
+
+    <!-- Parte inferior do site -->
+    <bottom class="bottom">
+        <div class="imag">
+            <img class="safebankbot" src="images/teste.png" alt="Copyright©">
+        </div>
+
+        <div class="ladodireito">
+            <a class="nomes_bottom">Todos os direitos reservados</a>
+            <a class="nomes_bottom">Antonio de Souza</a>
+            <a class="nomes_bottom">Carlos H. A. Berkenbrock</a>
+            <a class="nomes_bottom">Nicolas I. Bizotto</a>
+        </div>
+
+    </bottom>
+</body>
